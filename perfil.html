@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; margin: 0; text-align: center; }
+        h2 { color: #333; margin-bottom: 15px; font-size: 18px; }
+        
+        /* Definición de la Grilla (6 columnas x 6 filas) */
+        .grilla {
+            display: grid;
+            grid-template-columns: repeat(6, 30px);
+            grid-template-rows: repeat(6, 30px);
+            gap: 2px;
+            justify-content: center;
+            background-color: #eee;
+            padding: 5px;
+            width: fit-content;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
+        
+        /* Bloque básico gris de fondo */
+        .bloque {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+        }
+        
+        /* Bloques activos para pintar la letra L en amarillo */
+        .activo {
+            background-color: #000000; /* Amarillo */
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Perfil del Diseñador: Letra L</h2>
+    
+    <div class="grilla">
+        <div class="bloque activo"></div><div class="bloque"></div><div class="bloque"></div><div class="bloque"></div><div class="bloque"></div><div class="bloque"></div>
+        
+        <div class="bloque activo"></div><div class="bloque"></div><div class="bloque"></div><div class="bloque"></div><div class="bloque"></div><div class="bloque"></div>
+        
+        <div class="bloque activo"></div><div class="bloque"></div><div class="bloque"></div><div class="bloque"></div><div class="bloque"></div><div class="bloque"></div>
+        
+        <div class="bloque activo"></div><div class="bloque"></div><div class="bloque"></div><div class="bloque"></div><div class="bloque"></div><div class="bloque"></div>
+        
+        <div class="bloque activo"></div><div class="bloque"></div><div class="bloque"></div><div class="bloque"></div><div class="bloque"></div><div class="bloque"></div>
+        
+        <div class="bloque activo"></div><div class="bloque activo"></div><div class="bloque activo"></div><div class="bloque activo"></div><div class="bloque activo"></div><div class="bloque"></div>
+
+    
+    </div>
+
+</body>
+</html>

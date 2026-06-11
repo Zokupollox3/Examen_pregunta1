@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; margin: 0; text-align: center; }
+        h2 { color: #333; margin-bottom: 15px; font-size: 18px; }
+        
+        /* Contenedor del Carrusel */
+        .carrusel {
+            width: 100%;
+            max-width: 450px;
+            height: 250px;
+            margin: 0 auto;
+            overflow: hidden;
+            border: 2px solid #333;
+            position: relative;
+        }
+        
+        /* Contenedor de las imágenes alineadas */
+        .imagenes {
+            display: flex;
+            width: 500%; /* 5 imágenes = 500% */
+            height: 100%;
+            animation: slider 15s infinite ease-in-out;
+        }
+        
+        .imagenes img {
+            width: 20%; /* Cada imagen ocupa exactamente el ancho del carrusel */
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Animación automática del carrusel */
+        @keyframes slider {
+            0% { margin-left: 0%; }
+            15% { margin-left: 0%; }
+            20% { margin-left: -100%; }
+            35% { margin-left: -100%; }
+            40% { margin-left: -200%; }
+            55% { margin-left: -200%; }
+            60% { margin-left: -300%; }
+            75% { margin-left: -300%; }
+            80% { margin-left: -400%; }
+            95% { margin-left: -400%; }
+            100% { margin-left: 0%; }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Inauguración del Mundial 2026</h2>
+    
+    <div class="carrusel">
+        <div class="imagenes">
+            <img src="imagenes/Inauguración1.webp" alt="Inauguración 1">
+            <img src="imagenes/inauguracion2.webp" alt="Inauguración 2">
+            <img src="imagenes/inauguración3.avif" alt="Inauguración 3">
+            <img src="imagenes/inauguracion4.webp" alt="Inauguración 4">
+            <img src="imagenes/inauguración5.avif" alt="Inauguración 5">
+        </div>
+    </div>
+
+</body>
+</html>
